@@ -1,6 +1,6 @@
 export const TopBar = () => {
     return(
-        <div className="flex items-center w-full fixed justify-between bg-white text-t2 h-14 text-2xl">
+        <div className="flex items-center w-full fixed justify-between bg-b1 text-t2 h-14 text-2xl">
             <div className="px-8">
                 DEV
             </div>
