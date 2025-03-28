@@ -2,6 +2,7 @@
 import './App.css'
 import { About } from './components/About'
 import { Certi } from './components/Certi'
+import { Contact } from './components/Conact'
 import { Intro } from './components/Intro'
 import { Projects } from './components/Projects'
 import { TopBar } from './components/TopBar'
@@ -16,6 +17,7 @@ function App() {
         <About />
         <Projects />
         <Certi />
+        <Contact/>
     </div>
   )
 }
