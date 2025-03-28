@@ -1,6 +1,7 @@
 
 import './App.css'
 import { About } from './components/About'
+import { Certi } from './components/Certi'
 import { Intro } from './components/Intro'
 import { Projects } from './components/Projects'
 import { TopBar } from './components/TopBar'
@@ -14,6 +15,7 @@ function App() {
         <Intro />
         <About />
         <Projects />
+        <Certi />
     </div>
   )
 }
