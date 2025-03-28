@@ -1,8 +1,8 @@
 export const Intro = () => {
     return(
-        <div className="w-full h-screen flex items-center gap-4 text-t2">
-                <div className="w-1/2 flex items-center justify-end">
-                    <img src="/public/1.jpg" className="w-1/2 border border-none rounded-full"/>
+        <div className="w-full h-screen flex items-center  gap-4 text-t2">
+                <div className="w-1/2 flex items-center justify-center">
+                    <img src="/1.jpg" className="w-1/2 border border-none rounded-full"/>
                 </div>
                 <div className="w-1/2 h-full flex items-center ">
                 <div>
