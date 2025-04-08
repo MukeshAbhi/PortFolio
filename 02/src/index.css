@@ -2,10 +2,10 @@
 
 :root{
   font-family: "Noto Sans",sans-serif;
-  background-color: rgb(24 3 23);
+  background-color: rgb(3, 6, 24);
   color: white;
 }
 
 .bg-image {
-  background-image: url(assets/noise.webp);
+  background-image: url(assets/bg2.png);
 }

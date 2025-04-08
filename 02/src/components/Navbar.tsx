@@ -29,7 +29,7 @@ export const Navbar = () => {
            
     return(
         <div>
-            <nav className="fixed left-0 right-0 z-50 lg:top-4">
+            <nav className="fixed left-0 right-0 top-0 lg:p-4">
               {/*DeskTop Menue6 */}
               <div className="mx-auto hidden max-w-xl items-center justify-center rounded-full border-white/30 py-2 backdrop-blur-lg lg:flex">
                 <div className="flex items-center justify-between gap-6">
