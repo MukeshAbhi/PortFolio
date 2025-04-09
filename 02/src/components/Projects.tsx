@@ -27,7 +27,7 @@ export const Projects = () => {
 										<strong>Tech Stack</strong>
 										<ul>
 											{project.techStack.map((text, index) => (
-												<li className="mb-1 mr-2 inline-block rounded-full border border-blue-600/30 px-3 py-1 text-sm font-semibold" key={index}>{text}</li>
+												<li className="m-1 mr-2 inline-block rounded-full border border-blue-600/30 px-3 py-1 text-sm font-semibold" key={index}>{text}</li>
 											))}
 										</ul>
 									</div>
