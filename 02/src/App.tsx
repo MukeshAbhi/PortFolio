@@ -1,3 +1,4 @@
+import { Education } from "./components/Education"
 import { Hero } from "./components/Hero"
 import { Navbar } from "./components/Navbar"
 import { Projects } from "./components/Projects"
@@ -14,6 +15,7 @@ function App() {
           <Hero />
           <Projects />
           <Skills />
+          <Education />
         </div>
       </div>
     </main>

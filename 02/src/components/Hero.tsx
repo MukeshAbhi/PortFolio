@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { PROFILE } from "../constants";
 import { RiArrowRightUpLine } from "@remixicon/react";
-import david from "../assets/David.webp";
+import dp from "../assets/dp.webp";
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -21,7 +21,7 @@ export const Hero = () => {
           </span>       
           <RiArrowRightUpLine/>
         </a>
-        <img src={david} alt={PROFILE.name} width={400} height={400} className="hero-img rounded-3xl border border-blue-700/20 p-1" />
+        <img src={dp} alt={PROFILE.name} width={400} height={400} className="hero-img rounded-3xl border border-blue-700/20 p-1" />
       </div>
     </div>
     )
