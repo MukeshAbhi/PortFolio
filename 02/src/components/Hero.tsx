@@ -1,10 +1,55 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { PROFILE } from "../constants";
 import { RiArrowRightUpLine } from "@remixicon/react";
 import dp from "../assets/dp.webp";
+import gsap from "gsap";
 
 export const Hero = () => {
   const heroRef = useRef(null);
+
+  useEffect((() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        defaults: { ease: "power3.out", duration: 0.6}
+      });
+
+      tl.from(".hero-title", {
+        opacity: 0,
+        y: -50,
+        scale: 0.95,
+        duration: 0.8,
+      })
+        .from(".hero-subheading", {
+          opacity: 0,
+          y: 50,
+          scale: 0.95,
+          duration: 0.8,
+        }, "-=0.4"
+      )
+        .from(".hero-text",{
+          opacity: 0,
+          y: 30,
+          duration: 0.8,
+        }, "-=0.4"
+      )
+        .from(".hero-btn", {
+          opacity: 0,
+          scale: 0.9,
+          duration: 0.7,
+        }, "-=0.3"
+      )
+        .from(".hero-img", {
+          opacity: 0,
+          y: 50,
+          scale: 0.95,
+          duration: 0.8,
+        }, "-=0.5"
+      )
+    }, heroRef)
+
+    return () => ctx.revert();
+  }),[])
+
   return (
     <div className="flex min-h-screen flex-col items-center" ref={heroRef}>
       <div className="mt-24 flex flex-col items-center justify-center text-center px-4 gap-4 lg:gap-6 lg:mt-40">
