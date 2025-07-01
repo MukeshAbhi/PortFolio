@@ -13,7 +13,7 @@ export const Contact = () => {
             
             <div className=" mb-12 flex gap-5 items-center justify-center">
                 {CONTACT.map((con) => (
-                    <a  className="w-10 h-10 flex items-center justify-center mb-2" 
+                    <a  className="w-10 h-10 flex items-center justify-center mb-2 sm:text-white" 
                     key={con.id}
                     dangerouslySetInnerHTML={{ __html: con.icon }}
                     target="_blank"
